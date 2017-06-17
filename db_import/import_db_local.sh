@@ -8,15 +8,9 @@ folder=philadelphia
 
 echo $host $port $database $folder
 
-<<<<<<< HEAD
 mongoimport -h $host --port $port -d $database -c blocks --file ./$folder/blocks_export.json
 
 mongoimport -h $host --port $port -d $database -c city --file ./$folder/city_export.json
-=======
-mongoimport -h $host --port $port -d $database -c blocks --file ./$folder/blocks_export.js && \
-
-mongoimport -h $host --port $port -d $database -c city --file ./$folder/city_export.js && \
->>>>>>> 3ace691f852e377f6382f513f29dd882f205963f
 
 mongoimport -h $host --port $port -d $database -c neighborhoods --file ./$folder/neighborhoods_export.json && \
 
