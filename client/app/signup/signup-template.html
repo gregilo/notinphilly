@@ -12,6 +12,35 @@
         <div class="alert alert-danger" ng-show="isRegisterFailed">{{ errorMessage }}</div>
     </div>
     <div class="modal-body">
+        <div class="row signup-progress" ng-controller="SignupProgressController">
+        <!-- TODO: Refeactor this into cleaner markup -->
+            <ul>
+                <li class="col-xs-4" ng-class="{'step-complete': currentStep > 1, 'current-step': currentStep === 1}">
+                    <i class="fa fa-circle-o-thin">
+                    <span class="accessibly-hidden">Create Account Step Incomplete</span></i>
+                    <i class="fa fa-pencil">
+                    <span class="accessibly-hidden">Create Account Step in Progress</span></i>
+                    <i class="fa fa-check-circle">
+                    <span class="accessibly-hidden">Create Account Step Complete</span></i>
+                 Account</li>
+                <li class="col-xs-4" ng-class="{'step-complete': currentStep > 2, 'current-step': currentStep === 2}">
+                    <i class="fa fa-circle-o">
+                    <span class="accessibly-hidden">Create Profile Step Incomplete</span></i>
+                    <i class="fa fa-pencil">
+                    <span class="accessibly-hidden">Create Account Step in Progress</span></i>
+                    <i class="fa fa-check-circle">
+                    <span class="accessibly-hidden">Create Profile Step Complete</span></i>
+                 Profile</span></li>
+                <li class="col-xs-4" ng-class="{'step-complete': currentStep > 3, 'current-step': currentStep === 3}">
+                    <i class="fa fa-circle-o">
+                    <span class="accessibly-hidden">Register Blocks Step Incomplete</span></i>
+                    <i class="fa fa-pencil">
+                    <span class="accessibly-hidden">Create Account Step in Progress</span></i>
+                    <i class="fa fa-check-circle">
+                    <span class="accessibly-hidden">Register Blocks Step Complete</span></i>
+                 Blocks</li>
+            </ul>
+        </div>
         <div class="row" ng-show="isRegisterSuccess">
             <div class="row">
                 <div class="col-sm-3 col-sm-3">
