@@ -13,6 +13,9 @@ To run the app locally:
 2. Install *nodejs*, *npm*, *bower*, and *mongodb*.
 3. Run `npm install` in the local project root folder.
 4. Run `bower install` in the local project root folder.
-5. Run `sh db_import/import_db.sh` in terminal to create and seed the database.
-6. Populate api keys and server settings in server/config.
-7. Run `node server`, you can now access the server at `http://localhost:8080`.
+5. In a new Terminal tab, run `mongo` to start running MongoDB.
+6. Create and seed the database:
+   a. On Windows, run the `db_import/import_db_local.bat` file.
+   b. On Mac/Linux: run the `db_import/import_db_local.sh` file.
+7. Populate api keys and server settings in server/config (contact Yuri for keys).
+8. Run `node server`, you can now access the server at `http://localhost:8080`.

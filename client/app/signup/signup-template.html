@@ -12,6 +12,17 @@
         <div class="alert alert-danger" ng-show="isRegisterFailed">{{ errorMessage }}</div>
     </div>
     <div class="modal-body">
+        <div class="row" ng-show="isRegisterSuccess">
+            <div class="row">
+                <div class="col-sm-3 col-sm-3">
+                </div>
+                <div class="col-sm-6 col-sm-6">
+                    <a class="btn btn-lg btn-success btn-block input-block-level" href="" ng-click="close()">
+                        Close
+                    </a>
+                </div>
+            </div>
+        </div>
         <form name="signinForm" ng-show="!isRegisterSuccess" novalidate ng-submit="register()">
             <div class="row">
                 <div>

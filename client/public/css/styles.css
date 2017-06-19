@@ -3,8 +3,11 @@
 
 /* Color Key -----
 #18a0dc Blue
+#0b4761 Dark Blue
 #fdc442 Yellow
+#7b9721 Green
 #ebebeb Light Gray
+#525252 Medium Gray
 ------------------ */
 
 html,
@@ -511,6 +514,15 @@ hr {
     text-align: center;
 }
 
+.prc-logo {
+    width: 250px;
+    padding-bottom: 15px;
+}
+
+.thb-logo {
+    padding-bottom: 15px;
+}
+
 .social-icons {
     text-align: center;
 }
@@ -541,16 +553,76 @@ hr {
     text-decoration: none;
 }
 
-
-/* Component Styles   */
+/* MODAL ################ */
 
 .modal-dialog {
     margin-top: 80px;
-    /* Accommodate for sticky header */
 }
 
 
-/* Existing Styles ############################################## */
+/* Signup Form ############ */
+
+.signup-progress {
+    font-family: "Open Sans", Helvetica, Geneva, sans-serif;
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+}
+.signup-progress ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.signup-progress ul li {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #525252; 
+    border-right: 1px solid #ccc;
+}
+.signup-progress ul li:last-child {
+    border-right: 0;
+}
+
+.signup-progress .fa {
+    display: none;
+    color: #ccc;
+    margin-right: 8px;
+}
+.signup-progress .fa-pencil {
+    color: #fdaf42;
+}
+.signup-progress .fa-check-circle { 
+    color: #18a0dc;
+}
+
+.signup-progress .fa-circle-o {
+    display: inline-block;
+}
+
+.signup-progress .fa-check-circle, 
+.signup-progress .fa-pencil, {
+    display: none;
+}
+
+.signup-progress .current-step .fa-pencil {
+    display: inline-block;
+}
+
+.signup-progress .current-step .fa-circle-o,
+.signup-progress .current-step .fa-check-circle, 
+.signup-progress .step-complete .fa-circle-o,
+.signup-progress .step-complete .fa-pencil {
+    display: none;
+}
+
+.signup-progress .step-complete .fa-check-circle {
+    display: inline-block;
+}
+
+/* Existing Styles ############# */
 
 .top-bar {
     background: #fdfdfd;
@@ -748,15 +820,6 @@ hr {
 .faq-body {
     border-top: 1px solid #ddd;
     padding: 15px;
-}
-
-.prc-logo {
-    width: 250px;
-    padding-bottom: 15px;
-}
-
-.thb-logo {
-    padding-bottom: 15px;
 }
 
 #cityMap {
